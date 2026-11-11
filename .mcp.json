@@ -6,10 +6,7 @@
         "--from",
         "amazon-scout[mcp] @ git+https://github.com/Simi24/amazon-scout",
         "amazon-scout-mcp"
-      ],
-      "env": {
-        "AMAZON_SCOUT_DOMAIN": "amazon.com"
-      }
+      ]
     }
   }
 }

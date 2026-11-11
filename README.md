@@ -70,6 +70,8 @@ args = ["--from", "amazon-scout[mcp] @ git+https://github.com/Simi24/amazon-scou
 env = { AMAZON_SCOUT_DOMAIN = "amazon.it" }
 ```
 
+The country comes from the environment the client passes to the server (`env` above, or your shell); without it the tool falls back to its default.
+
 All the tools in the family: [shopping-scouts](https://github.com/Simi24/shopping-scouts).
 
 ## Usage
