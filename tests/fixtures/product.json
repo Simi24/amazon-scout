@@ -1,0 +1,204 @@
+{
+ "product_results": {
+  "categories": [
+   {
+    "position": 1,
+    "name": "Giardino e giardinaggio",
+    "link": "https://www.amazon.it/Giardino-Giardinaggio/b/ref=dp_bc_1?ie=UTF8&node=635016031",
+    "node": "635016031",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.it&device=desktop&engine=amazon&language=it_IT&node=635016031"
+   },
+   {
+    "position": 2,
+    "name": "Termometri e dispositivi metereologici",
+    "link": "https://www.amazon.it/Termometri-Esterno-Dispositivi-Metereologici/b/ref=dp_bc_2?ie=UTF8&node=9337408031",
+    "node": "9337408031",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.it&device=desktop&engine=amazon&language=it_IT&node=9337408031"
+   },
+   {
+    "position": 3,
+    "name": "Termometri",
+    "link": "https://www.amazon.it/Termometri/b/ref=dp_bc_3?ie=UTF8&node=9337412031",
+    "node": "9337412031",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.it&device=desktop&engine=amazon&language=it_IT&node=9337412031"
+   }
+  ],
+  "asin": "B0BYZP8NK2",
+  "title": "SONOFF SNZB-02D Mini sensore di temperatura e umidità ZigBee, termometro igrometro per interni, display LCD, compatibile con Alexa/Google Home",
+  "link": "https://www.amazon.it/SONOFF-SNZB-02D-IT-ALL-2/dp/B0BYZP8NK2/",
+  "link_clean": "https://www.amazon.it/dp/B0BYZP8NK2/",
+  "brand": "Visita lo Store di SONOFF",
+  "thumbnail": "https://m.media-amazon.com/images/I/31XyiSlPwqL._SX342_SY445_QL70_ML2_.jpg",
+  "rating": 4.4,
+  "reviews": 3493,
+  "bought_last_month": "400+ acquistati nel mese scorso",
+  "price": "16,30€",
+  "extracted_price": 16.3,
+  "delivery": [
+   "Consegna GRATUITA domenica, 15 novembre sul tuo primo ordine. Maggiori informazioni",
+   "oppure consegna più rapida domani, 12 novembre. Ordina entro 58 min. Maggiori informazioni"
+  ],
+  "stock": "Disponibilità immediata"
+ },
+ "purchase_options": {
+  "single_offer": {
+   "price": "16,30€",
+   "extracted_price": 16.3,
+   "delivery": [
+    "Consegna GRATUITA domenica, 15 novembre sul tuo primo ordine. Maggiori informazioni",
+    "oppure consegna più rapida domani, 12 novembre. Ordina entro 58 min. Maggiori informazioni"
+   ],
+   "stock": "Disponibilità immediata",
+   "features": {
+    "spedizione": {
+     "text": "Amazon",
+     "details": {
+      "heading": "Spedizione",
+      "content": "Amazon"
+     }
+    },
+    "venditore": {
+     "text": "SONOFFEU",
+     "details": {
+      "heading": "Venditore",
+      "content": "SONOFFEU"
+     },
+     "link": {
+      "text": "SONOFFEU",
+      "link": "https://www.amazon.it/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=A1OG8CX8ET8I1L&asin=B0BYZP8NK2&ref_=dp_merchant_link&isAmazonFulfilled=1"
+     }
+    },
+    "resi": {
+     "text": "Restituibile fino al 15 gennaio 2027",
+     "details": {
+      "heading": "Restituibile fino al 15 gennaio 2027",
+      "content": "Per le festività natalizie del 2026, se acquisti questo articolo tra il 1° novembre e il 25 dicembre 2026, puoi richiederne il reso entro il 15 gennaio 2027 o entro 14 giorni dalla ricezione, in conformità al tuo diritto legale di recesso, a seconda di quale termine scada più tardi."
+     },
+     "link": {
+      "text": "Consulta la politica di reso completa",
+      "link": "https://www.amazon.it/gp/help/customer/display.html?nodeId=GKM69DUUYKQWKWX7&ref_=dp_ret_policy"
+     }
+    },
+    "pagamento": {
+     "text": "Transazione sicura",
+     "details": {
+      "heading": "La transazione è sicura",
+      "content": "Ci impegniamo a proteggere i tuoi dati e la tua privacy. Il nostro sistema di protezione dei pagamenti crittografa i tuoi dati durante la trasmissione. Non divulghiamo i dati della tua carta di credito a venditori terzi né rivendiamo i tuoi dati personali a terze parti. Maggiori informazioni"
+     },
+     "link": {
+      "text": "Maggiori informazioni",
+      "link": "https://www.amazon.it/gp/help/customer/display.html?nodeId=201909010"
+     }
+    }
+   }
+  }
+ },
+ "reviews_information": {
+  "summary": {
+   "text": "I clienti sono soddisfatti della qualità, del rapporto qualità-prezzo e dell'estetica degli igrometri. Li descrivono come ottimi, perfetti e pienamente soddisfatti. Inoltre, apprezzano la visibilità del display integrato e la facilità d'uso. Tuttavia, hanno opinioni contrastanti sulla connettività e sul consumo della batteria.",
+   "insights": [
+    {
+     "title": "Qualità",
+     "sentiment": "positive",
+     "mentions": {
+      "total": 103,
+      "positive": 91,
+      "negative": 12
+     },
+     "summary": "I clienti sono soddisfatti della qualità del prodotto. Affermano che è ottimo, perfetto e in grado di svolgere il suo dovere."
+    },
+    {
+     "title": "Rapporto qualità-prezzo",
+     "sentiment": "positive",
+     "mentions": {
+      "total": 31,
+      "positive": 29,
+      "negative": 2
+     },
+     "summary": "I clienti sono soddisfatti del rapporto qualità-prezzo del prodotto. Affermano che è eccellente e ne vale davvero la pena."
+    },
+    {
+     "title": "Estetica",
+     "sentiment": "positive",
+     "mentions": {
+      "total": 30,
+      "positive": 30,
+      "negative": 0
+     },
+     "summary": "I clienti apprezzano l'estetica del prodotto, descrivendolo come carino e con icone gradevoli alla vista."
+    },
+    {
+     "title": "Visibilità",
+     "sentiment": "positive",
+     "mentions": {
+      "total": 30,
+      "positive": 24,
+      "negative": 6
+     },
+     "summary": "I clienti apprezzano la visibilità del display del prodotto. Affermano che è ben leggibile anche a distanza e che non crea fastidio al buio."
+    },
+    {
+     "title": "Facilità d'uso",
+     "sentiment": "positive",
+     "mentions": {
+      "total": 21,
+      "positive": 20,
+      "negative": 1
+     },
+     "summary": "I clienti apprezzano la facilità d'uso del prodotto. Affermano che è semplice da configurare, registrare e installare il sensore."
+    },
+    {
+     "title": "Dimensioni",
+     "sentiment": "positive",
+     "mentions": {
+      "total": 19,
+      "positive": 18,
+      "negative": 1
+     },
+     "summary": "I clienti apprezzano le dimensioni contenute del prodotto. Affermano che il sensore è compatto e che il display è ampio e ben leggibile, con numeri grandi e immediati."
+    },
+    {
+     "title": "Connettività",
+     "sentiment": "mixed",
+     "mentions": {
+      "total": 57,
+      "positive": 25,
+      "negative": 32
+     },
+     "summary": "I clienti hanno opinioni contrastanti sulla connettività del prodotto. Alcuni affermano che l'integrazione con il sistema domotico è impeccabile, mentre altri lamentano problemi di connessione con SmartThings o l'hub originale."
+    },
+    {
+     "title": "Consumo batteria",
+     "sentiment": "mixed",
+     "mentions": {
+      "total": 26,
+      "positive": 12,
+      "negative": 14
+     },
+     "summary": "I clienti hanno opinioni contrastanti riguardo al consumo della batteria del prodotto. Alcuni affermano che è lunga e non impedisce la sostituzione, mentre altri lamentano che consuma molta batteria e che la chiusura del vano batteria è poco precisa."
+    }
+   ],
+   "images": [
+    "https://m.media-amazon.com/images/I/715QiIIsz9L.jpg",
+    "https://m.media-amazon.com/images/I/71QXUwotRXL.jpg",
+    "https://m.media-amazon.com/images/I/41bMZRe-5yL.jpg",
+    "https://m.media-amazon.com/images/I/71nrNd3nusL.jpg",
+    "https://m.media-amazon.com/images/I/71Slt5itCUL.jpg",
+    "https://m.media-amazon.com/images/I/61LHA6wLT+L.jpg",
+    "https://m.media-amazon.com/images/I/414Ah0LrjeL.jpg",
+    "https://m.media-amazon.com/images/I/51WiZ5wFZLL.jpg",
+    "https://m.media-amazon.com/images/I/71XtgjJoZ1L.jpg",
+    "https://m.media-amazon.com/images/I/518uxNLhNmL.jpg",
+    "https://m.media-amazon.com/images/I/71CuTZI3GSL.jpg",
+    "https://m.media-amazon.com/images/I/21qeMmEugUL.jpg"
+   ],
+   "customer_reviews": {
+    "5 stelle": 71,
+    "4 stelle": 15,
+    "3 stelle": 5,
+    "2 stelle": 2,
+    "1 stella": 7
+   }
+  }
+ }
+}
