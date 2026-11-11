@@ -33,6 +33,6 @@ Every `search` and `product` call spends one SerpApi search (free plan: 250 a mo
 
 ## Reading the prices
 
-- `old_price` is the strikethrough price. On EU deals it is usually the lowest price of the last 30 days (Omnibus directive), so the discount is real; elsewhere it may be a list price. There is no price history: for that, point the user to a tracker such as Keepa.
+- `old_price` is the strikethrough price, and it is **ambiguous**: on some EU deals it is the lowest price of the last 30 days (Omnibus directive), but it is often the launch list price (e.g. a robot vacuum at 499.99 "was 1499.99" whose recent street price was 700-750). Never judge a deal from it alone: for expensive items, search the web for the price history ("<product> minimo storico", "<product> lowest price") and other stores, or point the user to a tracker such as Keepa.
 - `bought_last_month` ("400+ bought in past month") is a better popularity signal than the review count for recent listings.
 - Multi-packs often rank next to single units: compare the price **per piece** before calling one option cheaper.

@@ -20,7 +20,7 @@ Amazon blocks direct automated access and its affiliate API (now the Creators AP
 - **Cart link**: Amazon's documented "add to cart" form URL (`/gp/aws/cart/add.html?ASIN.1=…&Quantity.1=…`) opens the cart already filled in. The agent prepares the order, the person checks out. Nothing is bought automatically.
 - **Quota**: each search or product call costs one SerpApi search (250 a month on the free plan). Answers are cached on disk for 24 hours (`~/.cache/amazon-scout`, or `AMAZON_SCOUT_CACHE`); the cache key never contains the API key. `credits` shows what is left without spending anything.
 
-No price history: SerpApi returns the current price only. Use a tracker such as Keepa for that.
+No price history: SerpApi returns the current price only, and the strikethrough price is often the launch list price rather than the 30-day low. Use a tracker such as Keepa, or a web search, before calling an expensive item a deal.
 
 ## Install
 
