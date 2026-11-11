@@ -1,6 +1,6 @@
 [project]
 name = "amazon-scout"
-version = "0.1.0"
+version = "0.1.1"
 description = "Search Amazon, read the review summary and build a ready-to-checkout cart link, via SerpApi, built for LLM agents"
 readme = "README.md"
 license = "MIT"

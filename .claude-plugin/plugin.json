@@ -1,7 +1,7 @@
 {
   "name": "amazon-scout",
   "description": "Search Amazon, read its review summary and build ready-to-checkout cart links via SerpApi, for LLM agents",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Simi24"
   },
