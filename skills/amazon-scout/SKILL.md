@@ -5,7 +5,11 @@ description: Search Amazon, read Amazon's own review summary (per-topic positive
 
 # amazon-scout
 
-The `amazon-scout` command must be on the PATH (`uv tool install git+https://github.com/Simi24/amazon-scout`) and needs a SerpApi key (`SERPAPI_KEY` or `~/.config/amazon-scout/serpapi_key`). Set the store with `--domain` or `AMAZON_SCOUT_DOMAIN` (e.g. `amazon.it`).
+## Setup (only if the command is missing)
+
+- `amazon-scout` not found: propose `uv tool install git+https://github.com/Simi24/amazon-scout` and wait for the person to agree.
+- Exit code 2 with "missing SerpApi key": the person must create a free SerpApi account (250 searches a month) and run `amazon-scout setup` in their own terminal, which reads the key without echoing it and saves it to `~/.config/serpapi/key`. Never ask them to paste the key into the chat.
+- Default store: set `AMAZON_SCOUT_DOMAIN` (e.g. `amazon.it`) or pass the option on each call.
 
 ## Commands
 

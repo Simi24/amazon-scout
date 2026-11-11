@@ -26,12 +26,51 @@ No price history: SerpApi returns the current price only, and the strikethrough 
 
 ```bash
 uv tool install git+https://github.com/Simi24/amazon-scout
-mkdir -p ~/.config/amazon-scout && echo "<your SerpApi key>" > ~/.config/amazon-scout/serpapi_key
-chmod 600 ~/.config/amazon-scout/serpapi_key
-export AMAZON_SCOUT_DOMAIN=amazon.it   # optional, defaults to amazon.com
+# SerpApi key (free plan: 250 searches a month), shared with other SerpApi tools
+amazon-scout setup
+
+export AMAZON_SCOUT_DOMAIN=amazon.it   # optional default
 ```
 
-`SERPAPI_KEY` in the environment works too.
+Or let your agent do it: [AGENTS.md](AGENTS.md) tells any coding agent how to install and set up the tool.
+
+## Use it from an agent
+
+The CLI works with any agent that has a shell. On top of it:
+
+**Skill** — `skills/amazon-scout/SKILL.md` follows the open [Agent Skills](https://agentskills.io) format, read by Claude Code, Codex, Gemini CLI, Cursor, GitHub Copilot and others. Copy or symlink `skills/amazon-scout` into your agent's skills folder (e.g. `~/.claude/skills/`).
+
+**Claude Code plugin** — the repo is also a plugin (skill + MCP server):
+
+```text
+/plugin marketplace add Simi24/shopping-scouts
+/plugin install amazon-scout@shopping-scouts
+```
+
+**MCP server** — for agents without a shell. It runs straight from GitHub with `uvx`, nothing to install:
+
+```json
+{
+  "mcpServers": {
+    "amazon-scout": {
+      "command": "uvx",
+      "args": ["--from", "amazon-scout[mcp] @ git+https://github.com/Simi24/amazon-scout", "amazon-scout-mcp"],
+      "env": { "AMAZON_SCOUT_DOMAIN": "amazon.it" }
+    }
+  }
+}
+```
+
+This `mcpServers` block works in Claude Desktop, Cursor (`~/.cursor/mcp.json`) and Gemini CLI (`~/.gemini/settings.json`). In VS Code use the same server under `"servers"` in `.vscode/mcp.json`. In Codex (`~/.codex/config.toml`):
+
+```toml
+[mcp_servers.amazon_scout]
+command = "uvx"
+args = ["--from", "amazon-scout[mcp] @ git+https://github.com/Simi24/amazon-scout", "amazon-scout-mcp"]
+env = { AMAZON_SCOUT_DOMAIN = "amazon.it" }
+```
+
+All the tools in the family: [shopping-scouts](https://github.com/Simi24/shopping-scouts).
 
 ## Usage
 
@@ -41,33 +80,6 @@ amazon-scout product B0BYZP8NK2
 amazon-scout cart B0BYZP8NK2:4 B0C1G7W72B
 amazon-scout credits
 ```
-
-## Agent skill
-
-`skills/amazon-scout/SKILL.md` tells an agent when to use the tool, how to spend the quota and how to read the results. For Claude Code:
-
-```bash
-git clone https://github.com/Simi24/amazon-scout
-ln -s "$PWD/amazon-scout/skills/amazon-scout" ~/.claude/skills/amazon-scout
-```
-
-It pairs well with [ali-scout](https://github.com/Simi24/ali-scout): load both skills and ask the agent where to buy.
-
-## MCP server (optional)
-
-```bash
-uv tool install "amazon-scout[mcp] @ git+https://github.com/Simi24/amazon-scout"
-```
-
-```json
-{
-  "mcpServers": {
-    "amazon-scout": { "command": "amazon-scout-mcp", "env": { "AMAZON_SCOUT_DOMAIN": "amazon.it" } }
-  }
-}
-```
-
-Tools: `search_products`, `product_details`, `cart_link`, `remaining_credits`.
 
 ## Development
 

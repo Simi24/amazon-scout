@@ -4,16 +4,17 @@
   amazon-scout [--domain amazon.it] product <asin> [--json]
   amazon-scout [--domain amazon.it] cart <asin>[:qty] [<asin>[:qty] ...]
   amazon-scout credits
+  amazon-scout setup [--key <key>] [--no-browser]
 
-search and product cost one SerpApi search each (cached for 24 hours); cart and credits are free.
-The SerpApi key comes from SERPAPI_KEY or ~/.config/amazon-scout/serpapi_key; the default domain from
-AMAZON_SCOUT_DOMAIN (amazon.com otherwise).
+search and product cost one SerpApi search each (cached for 24 hours); cart, credits and setup are free.
+The SerpApi key comes from SERPAPI_KEY or ~/.config/serpapi/key (written by `setup`, shared with other
+SerpApi tools); the default domain from AMAZON_SCOUT_DOMAIN (amazon.com otherwise).
 """
 
 import argparse
 import sys
 
-from amazon_scout import cart, render, serpapi
+from amazon_scout import cart, key, render, serpapi
 
 
 def parse_args() -> argparse.Namespace:
@@ -37,6 +38,10 @@ def parse_args() -> argparse.Namespace:
     c.add_argument("items", nargs="+", metavar="ASIN[:QTY]")
 
     sub.add_parser("credits", help="remaining SerpApi searches (free)")
+
+    st = sub.add_parser("setup", help="save and check the SerpApi key (free)")
+    st.add_argument("--key", help="the key, for non-interactive setup (otherwise it is asked without echo)")
+    st.add_argument("--no-browser", action="store_true", help="do not open the SerpApi sign-up page")
     return p.parse_args()
 
 
@@ -51,6 +56,8 @@ def run(args: argparse.Namespace) -> str:
             return result.model_dump_json(indent=1) if args.json else render.product(result)
         case "cart":
             return cart.cart_url(cart.parse_lines(args.items), serpapi.domain(args.domain))
+        case "setup":
+            return key.setup(args.key, open_browser=not args.no_browser)
         case _:
             return render.credits(serpapi.credits())
 

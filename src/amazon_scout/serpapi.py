@@ -6,31 +6,25 @@ costs one search from the monthly quota (250 on the free plan): answers are cach
 
 import os
 import urllib.parse
-from pathlib import Path
 
-from amazon_scout import http
+from amazon_scout import http, key
 from amazon_scout.models import Credits, Item, Product, ReviewInsight, SearchResult
 
 ENDPOINT = "https://serpapi.com/search.json"
 ACCOUNT_ENDPOINT = "https://serpapi.com/account.json"
-KEY_FILE = Path.home() / ".config" / "amazon-scout" / "serpapi_key"
 DEFAULT_DOMAIN = "amazon.com"
 LANGUAGES = {"amazon.it": "it_IT", "amazon.de": "de_DE", "amazon.fr": "fr_FR", "amazon.es": "es_ES", "amazon.co.uk": "en_GB"}
-
-
-class MissingKeyError(RuntimeError):
-    """No SerpApi key: set SERPAPI_KEY or write it to ~/.config/amazon-scout/serpapi_key."""
 
 
 class SerpApiError(RuntimeError):
     """SerpApi answered with an error (quota exhausted, invalid key, unknown ASIN...)."""
 
 
+MissingKeyError = key.MissingKeyError
+
+
 def api_key() -> str:
-    key = os.environ.get("SERPAPI_KEY") or (KEY_FILE.read_text().strip() if KEY_FILE.exists() else "")
-    if not key:
-        raise MissingKeyError(f"missing SerpApi key: set SERPAPI_KEY or write it to {KEY_FILE}")
-    return key
+    return key.find()
 
 
 def domain(name: str | None = None) -> str:
